@@ -51,7 +51,7 @@
   </a>
 </nav>
     
-    <header class="text-center container">
+    <header class="text-center">
       <h1><span
            class="txt-rotate"
            data-period="2000"
@@ -62,21 +62,20 @@
       
       
       <div class="header-button">
-        <button>
-          Instant Deploy
-        </button>
+       <a href="#get-started"><button>Instant Deploy</button></a>
         <button>
           <img height="30px" src="img/github_logo.svg" alt="github logo">
         </button>
       </div>
     </header>
 
-    <section class="container text-center p-top">
+    <section> 
+    <div class="container text-center">
       <div class="pt-5">
       <h2 id="header-h2">Install Torus and deploy your first project in less than 1 minute.</h2>
     </div>
-      <div class="row get-started pt-5">
-        <ol class="text-left">
+      <div class="row get-started p-top">
+        <ol id="get-started" class="text-left">
           <div class="col-md-4">
             <li>Install Globally</li>
             <p class="p-install">Make sure to have Nodejs12+ and NPM installed</p>
@@ -96,34 +95,43 @@
       </div>
     </section>
 
-
-    <section class="container text-center p-top">
+    <!-- VIDEO -->
+    <section class="container text-center">
+      <div class="pt-5">
       <video class="deploy-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
         <source src="video/arjan_deploy_video.mp4">
       </video>
+      </div>
     </section>
 
-    <section class="container text-center p-top">
+    <section class="container text-center pt-5">
       <div class="grid-benefits">
             <div class="card">
+            <img src="img/logo_test.svg" style="height: 150px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 2rem;" class="" alt="">
             <h3 class="card-title">Automation</h3>
             <p>Takes care of the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
           </div>
       
 
         <div class="card">
+          <img src="img/logo_test.svg" style="height: 150px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 2rem;" class="" alt="">
+
             <h3 class="card-title">Security</h3>
             <p>Everything runs locally which means you don't have to share your API keys or information with third parties.</p>
           </div>
         
 
         <div class="card">
+          <img src="img/logo_test.svg" style="height: 150px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 2rem;" class="" alt="">
+
             <h3 class="card-title">Flexibility</h3>
             <p>Have full control of your IAC templates. Genrate them automatically or edit them manually in the config or in the cloudformation designer.</p>
           </div>
         
 
         <div class="card">
+          <img src="img/logo_test.svg" style="height: 150px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 2rem;" class="" alt="">
+
             <h3 class="card-title">Limitless</h3>
             <p>In torus there are no tiers and no limits. Pay your cloud provider only for what you use.</p>
           </div>
@@ -216,12 +224,12 @@
   <!--Live Reload & Collaborate-->
   <section class="pt-5">
     <div class="container">
-      <div class="grid-2-col">
-          <div class="col-md-6 text-center text-md-left">
+      <div class="grid-features">
+          <div class="text-center text-md-left">
             <h3>Want to partake?</h3> 
             <p>We are a fully open source project and welcome anybody/everybody from anywhere to help out. If you are interested check out our contribution guide and jump into the project board.</p>>
           </div>
-          <div class="col-md-6 text-center ">
+          <div class="text-center ">
             <a href="https://github.com/orgs/arjan-tools/projects/1" onmouseover="borderanimate()" onmouseout="borderanimate()" aria-label="Project board Arjan">
               <svg xmlns="http://www.w3.org/2000/svg" class="board" viewBox="0 0 631.48 328.16">
               <g id="Layer_2-2" data-name="Layer 2">
