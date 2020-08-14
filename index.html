@@ -15,138 +15,258 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <nav class="topnav" id="myTopnav">
-  <a href="#home" class="nav-logo active">Torus</a>
+  <!-- TORUS LOGO -->
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.55 80.65">
+    <defs>
+      <style class=>
+        .cls-1, .cls-0, .cls-2, .cls-3, .cls-4 {fill:none;stroke:#f1f2f2;stroke-miterlimit:10;stroke-width:2px}
+      </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_5" data-name="Layer 5">
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="49.34" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="31.95" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="14.36" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="64.98" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="24.27" rx="13.68" ry="6.32"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="66.21" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="15.67" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="56.94" rx="13.68" ry="6.32"/>
+        <circle class="cls-0 fade-0" cx="54.27" cy="40.7" r="9.97"/>
+      </g>
+    </g>
+  </svg>
+  
+  <a href="#home" class="nav-logo active"><span>Torus</span></a>
   
   <div class="nav-links">
-    <a href="#features" class="nav-link">Features</a>
-    <a href="#pricing" class="nav-link">Pricing</a>
-    <a href="#tools" class="nav-link">Tools</a>
-    <a href="#docs" class="nav-link">Docs</a>
+    <a href="#features" class="nav-link"><span>Features</span></a>
+    <a href="pricing.html" class="nav-link"><span>Pricing</span></a>
+    <a href="torus.tools" class="nav-link"><span>Tools</span></a>
+    <a href="docs.html" class="nav-link"><span>Docs</span></a>
   </div>
 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <img height="24px" src="img/nav.svg" alt="">
+    <img height="24px" src="img/nav.svg" alt="nav menu">
   </a>
 </nav>
     
     <header class="text-center container">
-      <h1 class="p-top">Effortless Open Source Hosting for Static Websites</h1>
+      <h1><span
+           class="txt-rotate"
+           data-period="2000"
+           data-rotate='[ "Open source", "One command", "Effortless", "Free" ]'></span>
+        <span id="color-change">hosting</span>
+        <br>for static websites
+      </h1>
+      
+      
       <div class="header-button">
         <button>
-          Deploy Instantly
-          <img height="40px" src="img/aws_logo.png" alt="">
+          Instant Deploy
         </button>
         <button>
-          Collaborate
-          <img height="40px" src="img/github_logo.png" alt="">
+          <img height="30px" src="img/github_logo.svg" alt="github logo">
         </button>
       </div>
     </header>
 
     <section class="container text-center p-top">
-      <video class="deploy-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-        <source src="video/arjan_deploy_video.mp4">
-      </video>
-
-      <h2>Install globally and enjoy a seamless one-command deployment experience on all your static projects</h2>
-      
-      <div class="row get-started">
+      <div class="pt-5">
+      <h2 id="header-h2">Install Torus and deploy your first project in less than 1 minute.</h2>
+    </div>
+      <div class="row get-started pt-5">
         <ol class="text-left">
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <li>Install Globally</li>
+            <p class="p-install">Make sure to have Nodejs12+ and NPM installed</p>
             <button class="codebox">npm i -g torus-cli</button>
           </div>
-          <div class="col-lg-4">
-            <li>One time configuration</li>
+          <div class="col-md-4">
+            <li>Configure Providers</li>
+            <p class="p-install">Configure only once with your cloud and domain providers</p>
             <button class="codebox">torus init -g</button>
           </div>
-          <div class="col-lg-4">
-            <li>Deploy your project</li>
+          <div class="col-md-4">
+            <li>Deploy your website</li>
+            <p class="p-install">You must be in the root folder of your project</p>
             <button class="codebox">torus deploy</button>
           </div>
         </ol>
       </div>
     </section>
 
+
     <section class="container text-center p-top">
-      <h3>Webiste Hosting is merely a commodity these days; theres lots of cloud prividers that have reached massive scale, establishing "market prices". Even though they all offer the necessary infrastructure/services to host a website, the process to achieve this is usally not as simple as it seems... But don't worry, We are changing this.</h3>
+      <video class="deploy-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
+        <source src="video/arjan_deploy_video.mp4">
+      </video>
+    </section>
+
+    <section class="container text-center p-top">
+      <div class="grid-benefits">
+            <div class="card">
+            <h3 class="card-title">Automation</h3>
+            <p>Takes care of the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
+          </div>
       
-      <div class="row p-top">
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <h3 class="card-title">complete automation</h3>
+
+        <div class="card">
+            <h3 class="card-title">Security</h3>
+            <p>Everything runs locally which means you don't have to share your API keys or information with third parties.</p>
+          </div>
+        
+
+        <div class="card">
+            <h3 class="card-title">Flexibility</h3>
             <p>Have full control of your IAC templates. Genrate them automatically or edit them manually in the config or in the cloudformation designer.</p>
           </div>
-        </div>
+        
 
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <h3 class="card-title">More Security</h3>
-            <p>Editting your stack locally means you dont have to share your API keys or information with anybody</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <h3 class="card-title">Unmatched Flexibility</h3>
-            <p>Have full control of your IAC templates. Genrate them automatically or edit them manually in the config or in the cloudformation designer.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <h3 class="card-title">No Tiers, No Limits</h3>
+        <div class="card">
+            <h3 class="card-title">Limitless</h3>
             <p>In torus there are no tiers and no limits. Pay your cloud provider only for what you use.</p>
           </div>
         </div>
-      </div>
-
+    
     </section>
+
+
+    <div class="container text-center p-top">
+      <p>Webiste Hosting is merely a commodity these days; theres lots of cloud prividers that have reached massive scale, establishing "market prices". Even though they all offer the necessary infrastructure/services to host a website, the process to achieve this is usally not as simple as it seems... But don't worry, We are changing this.</p>
+    </div>
 
     <section class="container text-center p-top">
       <h2>How it Works</h2>
       <p>Torus Hosting is made up of a CLI and 3 SDK's; Stack, Domains, and Content. The CLI facilitates interaction with the SDK's through the comfrot of your command line but you can also use the SDK's programmatically inside your javascript projects. The SDK's manily standardize interaction with various services from different cloud providers; including both major cloud providers as well as domain registrars. Right now we only feature support for AWS and godaddy as they are respectively the cloud provider and domain registrar with the largest market shares, but we will continue exapnding this list.</p>
-      <img style="width: 100%;" src="img/torus-hosting-diagram.svg" alt="">
+      <img style="width: 100%;" src="img/torus-hosting-diagram.svg" class="pt-5" alt="torus hosting architectural diagram">
     </section>
 
     <section class="container text-center p-top">
-      <div class="row p-top">
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-title">Stack</h3>
+      <div class="grid-sdkr">
+        
+          <div class="card-sdk">
+            <h3 class="card-title">1. Stack:</h3>
             <p>Editting your stack locally means you dont have to share your API keys or information with anybody</p>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-title">Domains</h3>
+     
+      
+          <div class="card-sdk">
+            <h3 class="card-title">2. Domains:</h3>
             <p>Have full control of your IAC templates. Genrate them automatically or edit them manually in the config or in the cloudformation designer.</p>
           </div>
-        </div>
+      
 
-        <div class="col-md-4">
-          <div class="card">
-            <h3 class="card-title">Content</h3>
+      
+          <div class="card-sdk">
+            <h3 class="card-title">3. Content:</h3>
             <p>In torus there are no tiers and no limits. Pay your cloud provider only for what you use.</p>
           </div>
-        </div>
+       
 
       </div>
     </section>
 
+
     <!-- FEATURES SECTION -->
-    <section class="container text-center p-top">
+    <section id="features" class="container text-center p-top">
       <h2>Features</h2>
+  
+      <div class="grid-features">
+      <div class="card-features">
+        <h3 class="h3-features">Continous Deployment</h3>
+        <p>Just `git push` or `torus deploy` to have you website live.</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">Free SLA</h3>
+        <p>Includes a 99.99% SLA automatically in your projects</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">Domain Transfer</h3>
+        <p>Transfer your custom domain names automatically.</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">DNS</h3>
+        <p>Automates the record/nameserver operations in your Domain Name Registar</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">Cache Invalidation</h3>
+        <p>Instanty updates the CDNs cache every time you make a change. </p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">Import Resources</h3>
+        <p>Automatically import all your existing resources from your cloud providers into your projects.</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">Self-configurating</h3>
+        <p>Generates all the resources that it needs</p>
+      </div>
+      <div class="card-features">
+        <h3 class="h3-features">One Time Installation</h3>
+        <p>Install globally and use it in all your projects</p>
+      </div>
+      <!-- <div class="card-features">
+        <h3 class="h3-features">SSL HTTPS</h3>
+        <p>Adds HTTPS to every project automatically following best practices.</p>
+      </div> -->
+      
+    </div>
     </section>
 
-    <!-- COLLABORATE -->
-    <section class="container text-center p-top">
-      <h2>Wanna partake?</h2>
-      <p>We are a fully open source project and we welcome anybody/everybody from anywhere to help out in the project. If you are interested check out our contribution guide and jump intio our project board. We will feature weekly sprints for the product through zoom open for everybody to partiocipate, just sign up for the weekly sprint and youll recieve a join link in your email. If you feel you cant contribute in code or if you simply dont have the time but you still wanna show your support you can always make a donation :)</p>
-      <!-- bellow the paragraph add a button to donate in crypto-->
-      <!-- add form on the right with the fields name, email and role (select list with options: currently collaborating on an issue, interest in grabbing an issue, want to learn more) -->
-    </section>
+  <!--Live Reload & Collaborate-->
+  <section class="pt-5">
+    <div class="container">
+      <div class="grid-2-col">
+          <div class="col-md-6 text-center text-md-left">
+            <h3>Want to partake?</h3> 
+            <p>We are a fully open source project and welcome anybody/everybody from anywhere to help out. If you are interested check out our contribution guide and jump into the project board.</p>>
+          </div>
+          <div class="col-md-6 text-center ">
+            <a href="https://github.com/orgs/arjan-tools/projects/1" onmouseover="borderanimate()" onmouseout="borderanimate()" aria-label="Project board Arjan">
+              <svg xmlns="http://www.w3.org/2000/svg" class="board" viewBox="0 0 631.48 328.16">
+              <g id="Layer_2-2" data-name="Layer 2">
+                <rect id="main-rect" class="" stroke="hsla(120, 100%, 50%, .6)" stroke-width="2" x="1.5" y="1.5" width="628.48" height="325.16"/>
+                <rect class="cls-2" x="24.87" y="34.15" width="175.44" height="264.59"/>
+                <g class="cls-3">
+                  <rect class="cls-4" x="34.17" y="58.18" width="156.83" height="49.18"/>
+                  <rect class="cls-4" x="34.17" y="121.08" width="156.83" height="49.18"/>
+                  <rect class="cls-4" x="34.17" y="183.97" width="156.83" height="49.18"/>
+                </g>
+                <rect class="cls-5" x="224.09" y="34.15" width="175.44" height="264.59"/>
+                <g class="cls-3">
+                <rect class="cls-6" x="233.4" y="58.18" width="156.83" height="49.18"/>
+                <rect class="cls-6" x="233.4" y="121.08" width="156.83" height="49.18"/>
+              </g>
+              <rect class="cls-7" x="224.09" y="34.15" width="175.44" height="264.59"/>
+              <rect class="cls-8" x="423.32" y="34.15" width="175.44" height="264.59"/>
+              <g class="cls-3"><rect class="cls-6" x="432.62" y="58.18" width="156.83" height="49.18"/>
+              </g>
+              <rect class="cls-9" x="423.32" y="34.15" width="175.44" height="264.59"/>
+              <rect class="cls-10" x="24.87" y="34.15" width="175.44" height="264.59"/>
+              </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </section>
+  
+
+
+
+
+  <footer class="pt-5">
+    <div class="footer-torus">
+      <span>Powered by </span>
+      <a style="text-decoration: none;" href="https://torus-digital.com/">
+        <span>Torus</span>
+      </a>
+    </div>
+  </footer>
+
 
     <script src="js/collapse.js"></script>
   </body>
