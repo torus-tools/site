@@ -30,6 +30,10 @@ h2#header-h2{
 }
 
 
+.h2-pricing{
+  font-size: 2rem;
+}
+
 h3{
   font-size: 2.3rem;
   font-weight: 400;
@@ -41,13 +45,14 @@ button {
 }
 
 p{
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 300;
 
 }
 
 ol {
   padding-left: 0;
+  margin: 0;
 }
 
 .p-pay{
@@ -64,19 +69,37 @@ ol {
 
 
 .h3-features{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400; 
-  color:#fed3ff;r
+  color:#fed3ff;
+  margin: 0;
 }
 
 .card-features{
-  background-color: black;
-  padding: 1rem;
+  background-color: rgb(38, 38, 38);
+  padding: 2rem;
   border-radius: 10px;
+
+
+}
+
+.p-features{
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 0!important;
+}
+
+.neumorphic-1{
+  box-shadow: 
+  6px 6px 8px 0 rgba(0, 0, 0, 0.6),
+  -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 3rem 7rem;
 }
 
 .pt-5{
-  padding-top: 10rem;
+  padding-top: 7rem;
 }
 
 .p-card{
@@ -92,6 +115,11 @@ ol {
   
 }
 
+
+.bg-header{
+  background-color: #050505;
+  padding: 2% 0% 10rem 0%;
+}
 
 .fade-0{
   opacity: 1;
@@ -145,13 +173,15 @@ ol {
 }
 
 #color-change{
-  animation: color 10s infinite;
+  animation: color 25s infinite;
 }
 
 @keyframes color{
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
+  0% { color: rgb(0, 255, 229); }
+  25% {color: rgb(245, 255, 64); }
+  50% { color: rgb(255, 30, 229); }
+  75% {color: rgb(43, 0, 255); }
+  100% { color: rgb(47, 255, 47); }
 }
 
 
@@ -183,10 +213,11 @@ ol {
   margin-left: auto;
   margin-right: auto;
   display: flex;  
+  border-radius: 8px;
 }
 
 .p-top{
-  padding-top: 6%;
+  padding-top: 3%;
 }
 
 .codebox {
@@ -213,19 +244,21 @@ ol {
 }
 .grid-get-started{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   transition: 1s all;
   gap: 1rem;
   text-align: left;
   }
 
-
+.img-diagram{
+  width: 100%;
+  padding: 0;
+}
 
 .grid-features{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   transition: 1s all;
-  gap: 1rem;
+  gap: 2rem;
   text-align: left;
   }
 
@@ -297,10 +330,10 @@ font-size: 1.8rem;
   padding-left: 5%;
 }
 .card {
-  /* background-color: #1a1533; */
-  box-shadow: 0 4px 8px 0 rgb(85, 0, 110);
+  box-shadow:  6px 6px 8px 0 rgba(255, 255, 255, 0.01),
+  -6px -6px 8px 0 rgba(255, 255, 255, 0.01);
   transition: 0.3s;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   height: auto;
   /* border: 1px solid #5237db; */
@@ -312,8 +345,15 @@ font-size: 1.8rem;
 .card-title {
   font-size: 3rem;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
+}
+
+.sdk-title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 400;
+  text-align: left;
 }
 
 .card-title-2 {
@@ -354,14 +394,36 @@ background-color:#45367c ;
   margin:0;
 }
 
+
+.neumorphic-2{
+
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.4), -4px -4px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+.neumorphic-3{
+
+  box-shadow: 6px 6px 6px 0 rgba(255, 255, 255, 0.04)inset, -4px -4px 6px 0 rgba(255, 255, 255, 0.05)inset;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
 #free-tier{
   padding-top: 0!important;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgb(98, 0, 255);
-  /* transform: scale(1.05); */
+.bg-commodity{
+  background-color: #090909;
 }
+
+/* .card:hover {
+
+  box-shadow:  6px 6px 8px 0 rgba(98, 0, 255, 0.4),
+  -4px -4px 6px 0 rgba(98, 0, 255, 0.2);
+  transform: scale(1.05);
+} */
 
 
 /* FOOTER */
@@ -379,7 +441,7 @@ background-color:#45367c ;
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: transparent;
+  background-color: #050505;
   overflow: hidden;
   padding: 1% 4%;
 }
@@ -420,7 +482,6 @@ table{
   text-align: left;
   border-spacing: 2px;
   display: grid;
-  temp
 }
 
 tr#row-aws, #row-godaddy{
@@ -481,26 +542,27 @@ tr#row-aws, #row-godaddy{
   .grid-benefits{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 5rem;
   
   }
 
 }
 
 @media (min-width: 991px){
-  .grid-benefits{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
-  
+  .neumorphic-1{
+    box-shadow: 
+    6px 6px 8px 0 rgba(0, 0, 0, 0.6),
+    -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0;
   }
-
 }
 
 
 @media (min-width: 1200px){
 .container {
-    width: 969px!important;
+    width: 983px!important;
 }}
 
 
