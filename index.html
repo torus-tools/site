@@ -62,7 +62,7 @@
       
       
       <div class="header-button">
-       <a href="#get-started"><button>Instant Deploy</button></a>
+       <a href="#get-started"><button class="neumorphic-1">Instant Deploy</button></a>
         <button>
           <img height="30px" src="img/github_logo.svg" alt="github logo">
         </button>
@@ -73,22 +73,22 @@
     <div class="container text-center">
       <div class="pt-5">
       <h2 id="header-h2">Install Torus and deploy your first project in less than 1 minute.</h2>
-      <p>Torus automates the whole deployment process including domain/dns operations, cloud infrastructure and content delivery across different providers. Currently, it only works with AWS Cloud and Godaddy but more integrations are coming soon.</p>
+      <p>Torus automates the whole deployment process including domain/dns operations, cloud infrastructure and content delivery across different providers. 
+          Works with AWS Cloud and Godaddy.</p>
     </div>
-      <div class=" get-started pt-5 pb-5">
-        <ol id="get-started" class="text-left">
-          <div class="col-md-4 neumorphic-1">
-            <li>Install Globally</li>
+      <div class=" grid-get-started get-started pt-3 pb-5">
+          <div class="neumorphic-1 neumorphic-bg">
+            <h4>1. Install Globally</h4>
             <p class="p-install">Make sure to have Nodejs12+ and NPM installed</p>
             <button class="codebox">npm i -g torus-cli</button>
           </div>
-          <div class="col-md-4 neumorphic-1">
-            <li>Configure Providers</li>
-            <p class="p-install">Configure only once with your cloud and domain providers</p>
+          <div class="neumorphic-1">
+            <h4>2. One time Config</h4>
+            <p class="p-install">Configure your cloud and domain providers only once</p>
             <button class="codebox">torus init -g</button>
           </div>
-          <div class="col-md-4 neumorphic-1">
-            <li>Deploy your website</li>
+          <div class="neumorphic-1">
+            <h4>3. Deploy</h4>
             <p class="p-install">You must be in the root folder of your project</p>
             <button class="codebox">torus deploy</button>
           </div>
@@ -97,17 +97,18 @@
     </section>
 
     <!-- VIDEO -->
-    <section class="container text-center">
-      <div class="pt-5">
+    <section>
+      <div class="container pt-5">
       <video class="deploy-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
         <source src="video/arjan_deploy_video.mp4">
       </video>
       </div>
     </section>
 
-    <section class="container text-center pt-5">
+    
+    <div class="container text-center pt-5">
       <div class="grid-benefits">
-            <div class="card">
+            <div class="card neumorphic-bg">
             <img src="img/logo_test.svg" style="height: 100px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 2rem;" class="" alt="">
             <h3 class="card-title">Automation</h3>
             <p>Takes care of the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
@@ -141,7 +142,7 @@
     </section>
 
 
-    <div class="container text-center p-top">
+    <div class="container text-center pt-5">
       <p>Webiste Hosting is merely a commodity these days; theres lots of cloud prividers that have reached massive scale, establishing "market prices". Even though they all offer the necessary infrastructure/services to host a website, the process to achieve this is usally not as simple as it seems... But don't worry, We are changing this.</p>
     </div>
 
@@ -158,7 +159,7 @@
     <div class="text-center">
       <div class="grid-sdk">
         
-          <div class="card-sdk neumorphic-2">
+          <div class="card-sdk neumorphic-2 neumorphic-bg">
             <h3 class="sdk-title">1. Stack:</h3>
             <p>A promise-based javascript SDK for generating, deploying and managing your IaC stacks in AWS with cloudformation.</p>
           </div>
@@ -193,7 +194,7 @@
       <h2>Features</h2>
   
       <div class="grid-features">
-      <div class="card-features neumorphic-3">
+      <div class="card-features">
         <h3 class="h3-features">Continous Deployment</h3>
        <p class="p-features">Just `git push` or `torus deploy` to have you website live.</p>
       </div>

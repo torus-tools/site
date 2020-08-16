@@ -44,8 +44,17 @@ button {
   
 }
 
+h4{
+  margin: 0;
+}
+
+
+.neumorphic-bg{
+  background-image: linear-gradient(45deg, rgba(12,12,12,1), rgba(24,24,24,1));
+}
+
 p{
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
 
 }
@@ -76,10 +85,9 @@ ol {
 }
 
 .card-features{
-  background-color: rgb(38, 38, 38);
   padding: 2rem;
   border-radius: 10px;
-
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.4), -4px -4px 6px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -95,7 +103,7 @@ ol {
   -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
   padding: 2rem;
   border-radius: 10px;
-  margin: 3rem 7rem;
+  margin: 2rem;
 }
 
 .pt-5{
@@ -187,7 +195,7 @@ ol {
 
 .header-button button{
 
-    border: none;
+    border: 2px solid #8a7bc1;
     text-decoration: none;
     color: #fafafa;
     font-size: 2.5rem;
@@ -196,7 +204,7 @@ ol {
     transition: all .3s;
     padding: 1rem 4rem;
     margin: 0% 1%;
-    background-color: #45367c;
+    background-color: transparent;
     letter-spacing: 2px;
     
   }
@@ -223,8 +231,8 @@ ol {
 .codebox {
   background-color: #333;
   color: #ddd;
-  margin: 5% 0;
-  padding: 1%;
+  margin: 3% 0;
+  padding: 1rem 0%;
   min-width: 100%;
   text-align: left;
   padding-left: 2%;
@@ -247,6 +255,7 @@ ol {
   transition: 1s all;
   gap: 1rem;
   text-align: left;
+  grid-gap: 2rem;
   }
 
 .img-diagram{
@@ -291,6 +300,10 @@ font-size: 1.8rem;
   text-align: left;
 }
 
+.card-sdk:hover{
+  transform: scale(1.01);
+}
+
 .card-sdk p{
   margin:0;
 }
@@ -330,8 +343,8 @@ font-size: 1.8rem;
   padding-left: 5%;
 }
 .card {
-  box-shadow:  6px 6px 8px 0 rgba(255, 255, 255, 0.01),
-  -6px -6px 8px 0 rgba(255, 255, 255, 0.01);
+  box-shadow:  6px 6px 8px 0 rgba(255, 255, 255, 0.04)inset,
+  -6px -6px 8px 0 rgba(255, 255, 255, 0.04)inset;
   transition: 0.3s;
   padding: 2rem;
   border-radius: 10px;
@@ -343,7 +356,7 @@ font-size: 1.8rem;
 
 }
 .card-title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
   font-weight: 400;
   text-align: center;
@@ -397,7 +410,7 @@ background-color:#45367c ;
 
 .neumorphic-2{
 
-    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.4), -4px -4px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.6), -6px -6px 8px 0 rgba(255, 255, 255, 0.05);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -488,6 +501,10 @@ tr#row-aws, #row-godaddy{
   background-color: rgba(135, 207, 235, 0.153);
 }
 
+.pt-3{
+  padding-top: 6%;
+}
+
 
 /* Change the color of links on hover */
 .topnav a span:hover {
@@ -545,6 +562,14 @@ tr#row-aws, #row-godaddy{
     grid-gap: 5rem;
   
   }
+  .neumorphic-1{
+    box-shadow: 
+    6px 6px 8px 0 rgba(0, 0, 0, 0.6),
+    -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 10rem;
+  }
 
 }
 
@@ -557,6 +582,14 @@ tr#row-aws, #row-godaddy{
     border-radius: 10px;
     margin: 0;
   }
+
+  .grid-get-started{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 1s all;
+    gap: 3rem;
+    text-align: left;
+    }
 }
 
 
