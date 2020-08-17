@@ -103,11 +103,11 @@ ol {
   -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
   padding: 2rem;
   border-radius: 10px;
-  margin: 2rem;
+  margin: 2rem 0rem;
 }
 
 .pt-5{
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 
 .p-card{
