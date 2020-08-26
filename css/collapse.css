@@ -3,25 +3,25 @@ html{
 }
 
 body{
-  background-color: #121212!important;
+  background-color: #131313;
   color: #f2f2f2!important;
   letter-spacing: 1px;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center!important;
 }
 .text-left {
   text-align: left;
 }
 
-h1 {
-  font-size:8rem;
+.header-h1 {
+  font-size: 7.5rem;
   line-height: 10rem;
 }
 h2 {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2#header-h2{
@@ -32,6 +32,16 @@ h2#header-h2{
 
 .h2-pricing{
   font-size: 2rem;
+}
+
+.font-banner{
+  font-size: 4rem;
+  text-align: center;
+  display: inline-block;
+
+  margin: auto;
+
+  
 }
 
 h3{
@@ -48,6 +58,17 @@ h4{
   margin: 0;
 }
 
+a#docs {
+  color: #9033b7;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.pb-3{
+  padding-bottom: 3rem;
+}
+
+
 
 .neumorphic-bg{
   background-image: linear-gradient(45deg, rgba(12,12,12,1), rgba(24,24,24,1));
@@ -56,6 +77,7 @@ h4{
 p{
   font-size: 2.2rem;
   font-weight: 300;
+  color: #c3c3c3;
 
 }
 
@@ -91,6 +113,13 @@ ol {
 
 }
 
+.grid-learn{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: center;
+}
+
+
 .p-features{
   font-size: 1.7rem;
   font-weight: 300;
@@ -99,15 +128,15 @@ ol {
 
 .neumorphic-1{
   box-shadow: 
-  6px 6px 8px 0 rgba(0, 0, 0, 0.6),
-  -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+  12px 12px 12px 0 rgba(0, 0, 0, 0.6),
+  -8px -8px 6px 0 rgba(6, 6, 6, 0.6);
   padding: 2rem;
   border-radius: 10px;
   margin: 2rem 0rem;
 }
 
 .pt-5{
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .p-card{
@@ -126,11 +155,11 @@ ol {
 
 .bg-header{
   background-color: #050505;
-  padding: 2% 0% 10rem 0%;
+  padding: 2rem 0 10rem 0;
 }
 
 .fade-0{
-  opacity: 1;
+  opacity: 0;
   animation-name: fade;
   animation-delay: 0;
   animation-duration: 2s;
@@ -138,7 +167,7 @@ ol {
 }
 
 .fade-1{
-  opacity: 1;
+  opacity: 0;
   animation-name: fade;
   animation-delay: .2s;
   animation-duration: 2s;
@@ -182,6 +211,7 @@ ol {
 
 #color-change{
   animation: color 25s infinite;
+  font-size: 9rem;
 }
 
 @keyframes color{
@@ -245,7 +275,19 @@ ol {
   padding-right: 3%;
 }
 
-
+.btn-banner{
+  border: 2px solid #8a7bc1;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all .3s;
+  padding: 1rem 4rem;
+  margin: 0% 1%;
+  background-color: transparent;
+  letter-spacing: 2px;
+}
 .get-started{
   font-size: 2.2rem;
   list-style-position: inside;
@@ -261,6 +303,27 @@ ol {
 .img-diagram{
   width: 100%;
   padding: 0;
+}
+
+.card-p{
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 3rem; 
+  margin: auto;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0rem;
+  /* background-color: rgb(77, 19, 63); */
 }
 
 .grid-features{
@@ -282,27 +345,35 @@ ol {
 
 .grid-benefits p {
 font-size: 1.8rem;
+text-align: center;
 }
 
 .grid-sdk{
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   transition: 1s all;
   text-align: left;
 }
 
 .card-sdk{
-  padding: 1rem;
-  /* background-color: #002f57; */
+  padding: 2rem;
+  background-color: transparent;
+  border: 2px solid #382a3f ;
   border-radius: 10pt;
   height: auto;
   text-align: left;
 }
 
-.card-sdk:hover{
-  transform: scale(1.01);
+
+.img-board{
+  max-width: 340px;
+  padding: 2rem;
 }
+
+/* .card-sdk:hover{
+  transform: scale(1.01);
+} */
 
 .card-sdk p{
   margin:0;
@@ -343,23 +414,22 @@ font-size: 1.8rem;
   padding-left: 5%;
 }
 .card {
-  box-shadow:  6px 6px 8px 0 rgba(255, 255, 255, 0.04)inset,
-  -6px -6px 8px 0 rgba(255, 255, 255, 0.04)inset;
+  box-shadow:  6px 6px 8px 0 rgba(0, 187, 255, 0.1)inset,
+  -6px -6px 8px 0 rgba(0, 187, 255, 0.1)inset;
   transition: 0.3s;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;;
   border-radius: 10px;
   height: auto;
   /* border: 1px solid #5237db; */
   display: inline-block;
-  align-content: center;
-  justify-content: center;
-
 }
+
 .card-title {
   font-size: 4rem;
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
+  display: inline-block;
 }
 
 .sdk-title {
@@ -367,6 +437,8 @@ font-size: 1.8rem;
   margin: 0;
   font-weight: 400;
   text-align: left;
+  padding-bottom: 1rem;
+  /* color: #ed6ecc; */
 }
 
 .card-title-2 {
@@ -384,6 +456,16 @@ font-size: 1.8rem;
 font-size: 3rem;
 font-weight: 400;
 background-color:#45367c ;
+}
+
+.logo-benefits{
+  height: auto;
+  width: 25%; 
+  max-height: 69px;
+  display: inline-block; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem; 
 }
 
 .no-bullet-price li {
@@ -431,6 +513,32 @@ background-color:#45367c ;
   background-color: #090909;
 }
 
+.form-style{
+  display: grid;
+  background-color: transparent;
+  max-width: 500px;
+  margin: auto;
+}
+.form-style input{
+  background-color: #333;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  color: #fbfbfb;
+}
+
+.form-btn{
+  background-color: transparent;
+  padding: 1rem 3rem;
+  border: 1px solid #ff00ff;
+  display: inline-block;
+}
+
+input #Feedback {
+  padding: 3rem 0rem!important;
+}
+
 /* .card:hover {
 
   box-shadow:  6px 6px 8px 0 rgba(98, 0, 255, 0.4),
@@ -444,11 +552,23 @@ background-color:#45367c ;
   padding: 2rem 3rem;
   background-color: #242424;
   text-align: right;
+  display: flex;
+
 }
 
 .footer-text{
   text-decoration: none;
 }
+
+
+.neumorphic-p{
+  box-shadow: 
+  12px 12px 12px 0 rgba(0, 0, 0, 0.2),
+  -8px -8px 6px 0 rgba(6, 6, 6, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
 
 /* COLLAPSE */
 
@@ -480,13 +600,13 @@ background-color:#45367c ;
 }
 
 td{
-  max-width: 150px;
+  
   padding: 1rem;
 
 }
 th{
   background-color: #45367c;
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -505,6 +625,14 @@ tr#row-aws, #row-godaddy{
   padding-top: 6%;
 }
 
+.neumorphic-tools{
+  box-shadow: 
+  6px 6px 8px 0 rgba(0, 0, 0, 0.6),
+  -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+}
 
 /* Change the color of links on hover */
 .topnav a span:hover {
@@ -560,17 +688,23 @@ tr#row-aws, #row-godaddy{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
-  
   }
+
+  .header-h1 {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
   .neumorphic-1{
     box-shadow: 
-    6px 6px 8px 0 rgba(0, 0, 0, 0.6),
-    -4px -4px 6px 0 rgba(29, 29, 29, 0.3);
+  12px 12px 12px 0 rgba(0, 0, 0, 0.6),
+  -8px -8px 6px 0 rgba(6, 6, 6, 0.6);
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 10rem;
   }
 
+  
 }
 
 @media (min-width: 991px){
@@ -590,58 +724,28 @@ tr#row-aws, #row-godaddy{
     gap: 3rem;
     text-align: left;
     }
+    .social-row {
+      padding: 0px 0px;
+      position: fixed;
+      right: 3%;
+      bottom: 9%;
+      display: block;
 }
 
+.pt-5{
+  padding-top: 8rem;
+}
+
+.grid-benefits p {
+  font-size: 1.8rem;
+  text-align: left;
+  }
+}
 
 @media (min-width: 1200px){
 .container {
     width: 983px!important;
 }}
-
-
-/* BOARD */
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.rect-border{
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  animation: dash .9s linear forwards;
-}
-
-.cls-1{stroke:aqua;stroke-width:3px;}
-.cls-1,
-.cls-10,
-.cls-6,
-.cls-7,
-.cls-8,
-.cls-9{stroke-miterlimit:10;}
-.cls-2{fill:lime;}
-.cls-2,
-.cls-5,
-.cls-8{opacity:0.25;}
-.cls-3{opacity:0.4;}
-.cls-4{fill:#fff;}
-.cls-5{fill:#ff0;}
-.cls-6{fill:#e0e0e0;}
-.cls-6,
-.cls-8{stroke:#fff;}
-.cls-10,
-.cls-7,
-.cls-9{fill:none;opacity:0.75;}
-.cls-7{stroke:#ff0;}
-.cls-10,
-.cls-7,
-.cls-8,
-.cls-9{stroke-width:2px;}
-.cls-8{fill:#f0f;}
-.cls-9{stroke:#f0f;}
-.cls-10{stroke:lime;}
-
 
 .pricing-plan-card {
   --gutter: 0.8rem;
@@ -653,4 +757,21 @@ tr#row-aws, #row-godaddy{
   color: var(--color-gray-1);
   border: 4px transparent solid;
   padding: var(--gutter);
+}
+
+
+
+.done {
+  padding: 1px;
+}
+.bg-gradient-primary {
+  background-image: linear-gradient(to right, #00ff00,#00e1ff,#e2ff00,#e700ff);
+  border-radius: 8px;
+}
+.bg-dark-purple {
+  background-color: rgba(17, 0, 31, .9);
+  border-radius: 8px;
+}
+.p-1 {
+  padding: 1rem;
 }
