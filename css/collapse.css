@@ -16,8 +16,9 @@ body{
 }
 
 .header-h1 {
-  font-size: 7.5rem;
-  line-height: 10rem;
+  font-size: 6rem;
+  line-height: 7.5rem;
+  margin-bottom: 3rem;
 }
 h2 {
   font-size: 5rem;
@@ -64,10 +65,37 @@ a#docs {
   font-size: 3rem;
 }
 
+a#docs:hover {
+color: rgb(0, 255, 229);
+}
+
+.a-cost{
+    color: #e47911;
+    text-decoration: none;
+    font-size: 2rem;
+    vertical-align: text-top;
+  }
+  
+  .a-cost:hover {
+  color: #9033b7;
+  text-decoration: none;
+  }
+  
+
+
 .pb-3{
   padding-bottom: 3rem;
 }
+.pb-5{
+  padding-bottom: 5rem;
+}
 
+
+.gradient-text {
+  background: linear-gradient(to right, #00ff00 0%, #ff00ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 
 .neumorphic-bg{
@@ -109,7 +137,7 @@ ol {
 .card-features{
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.4), -4px -4px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.6), -4px -4px 6px 0 rgba(0, 0, 0, 0.4);
 
 }
 
@@ -155,7 +183,7 @@ ol {
 
 .bg-header{
   background-color: #050505;
-  padding: 2rem 0 10rem 0;
+  padding: 1rem 0 10rem 0;
 }
 
 .fade-0{
@@ -163,7 +191,8 @@ ol {
   animation-name: fade;
   animation-delay: 0;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .fade-1{
@@ -171,47 +200,64 @@ ol {
   animation-name: fade;
   animation-delay: .2s;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .fade-2{
-  opacity: 1;
-  animation-name: fade;
+  opacity: 0;
+  animation-name: fade-2;
   animation-delay: .4s;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .fade-3{
-  opacity: 1;
-  animation-name: fade;
+  opacity: 0;
+  animation-name: fade-2;
   animation-delay: .6s;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .fade-4{
-  opacity: 1;
-  animation-name: fade;
+  opacity: 0;
+  animation-name: fade-3;
   animation-delay: .8s;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* TORUS ANIMATION */
 @keyframes fade{
   0% {opacity:0}
-
-  50% {opacity: 1;}
-  
  
-  100% {opacity:0}
+  100% {opacity:1}
 
 }
 
+@keyframes fade-2{
+  0% {opacity:0}
+ 
+  100% {opacity:.5}
+
+}
+
+@keyframes fade-3{
+  0% {opacity:0}
+ 
+  100% {opacity:.3}
+
+}
+
+
+
 #color-change{
   animation: color 25s infinite;
-  font-size: 9rem;
+  font-size: 8rem;
 }
 
 @keyframes color{
@@ -228,19 +274,20 @@ ol {
     border: 2px solid #8a7bc1;
     text-decoration: none;
     color: #fafafa;
-    font-size: 2.5rem;
-    border-radius: 10px;
+    font-size: 1.8rem;
+    border-radius: 8px;
     display: inline-block;
     transition: all .3s;
-    padding: 1rem 4rem;
-    margin: 0% 1%;
+    padding: 1rem 2rem;
+    margin: 0 1rem 1rem 0;
     background-color: transparent;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+   
     
   }
   .header-button button:hover{
   transform: scale(1.05);
-  background-color: #cc00ff;
+    background: linear-gradient(45deg, #e786ff 0%, #cc00ff 100%)
   }
 
 
@@ -535,6 +582,26 @@ background-color:#45367c ;
   display: inline-block;
 }
 
+.grid-cost {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  transition: 1s all;
+  column-gap: 6rem;
+  text-align: left;
+justify-items: center;
+}
+
+.btn-signup{
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: 1px solid #ff00ff;
+    display: inline-block;
+  }
+
+.btn-signup:hover{
+  background: linear-gradient(45deg, #09ff3a 0%, #ff00e1 100%);
+}
+
 input #Feedback {
   padding: 3rem 0rem!important;
 }
@@ -602,6 +669,7 @@ input #Feedback {
 td{
   
   padding: 1rem;
+  min-width: 125px;
 
 }
 th{
@@ -611,7 +679,7 @@ th{
 }
 
 table{
-  border-collapse: separate;
+  border-collapse: collapse;
   text-align: left;
   border-spacing: 2px;
   display: grid;
@@ -622,7 +690,7 @@ tr#row-aws, #row-godaddy{
 }
 
 .pt-3{
-  padding-top: 6%;
+  padding-top: 4rem;
 }
 
 .neumorphic-tools{
@@ -691,8 +759,10 @@ tr#row-aws, #row-godaddy{
   }
 
   .header-h1 {
-    font-size: 8rem;
-    line-height: 10rem;
+    font-size: 7rem;
+    line-height: 8rem;
+    letter-spacing: 3px;
+  
   }
 
   .neumorphic-1{
@@ -716,6 +786,10 @@ tr#row-aws, #row-godaddy{
     border-radius: 10px;
     margin: 0;
   }
+  .pb-5{
+    padding-bottom: 8rem;
+  }
+  
 
   .grid-get-started{
     display: grid;
@@ -747,6 +821,8 @@ tr#row-aws, #row-godaddy{
     width: 983px!important;
 }}
 
+
+
 .pricing-plan-card {
   --gutter: 0.8rem;
   height: 100%;
@@ -760,6 +836,30 @@ tr#row-aws, #row-godaddy{
 }
 
 
+.footer-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-padding{
+  padding: 0 1rem;
+}
+
+  .btn-docs {
+    padding: 5px 15px;
+    background-color: #22262b;
+    border: none;
+    color: #fafafa
+}
+
+.btn-docs:hover {
+color: #cc00ff;
+}
+
+
+.pb-2{
+  padding-bottom: 2rem;
+}
 
 .done {
   padding: 1px;
