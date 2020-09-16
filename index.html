@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Deploy jamstack sites with one command.  Get enterprise-grade global edge network, 99.99% SLA, Continuous deployment and automatic HTTPS for free. Say bye to paying for tiers.">
     <meta name="author" content="Torus Digital">
-    <title>Torus: A no tier, free open source hosting system for static websites</title>
+    <title>Torus: All in one, free open source hosting system for static websites</title>
     <link rel="icon" href="img/torus_favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/collapse.css">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body id="page-top">
 
@@ -53,40 +52,46 @@
       <div>
       <h1 class="header-h1"><span
            class="txt-rotate"
-           data-period="1000"
-           data-rotate='[ "Open source", "Effortless", "Limitless"]'></span>
-      <br><span id="color-change">hosting</span>
-        <br>for static websites
+           data-period="2000"
+           data-rotate='[ "All in one", "Open source", "Unlimited", "Effortless"]'></span>
+      <br><span id="color-change">hosting</span> for 
+        <br>static websites
       </h1>
       </div>
 
       <div class="container">
-       <h2 style="font-size: 2.2rem; font-weight: 300; margin: 0 auto 0 auto; padding-bottom: 3rem; max-width: 700px;">
-        We enable font-end developers to offer enterprise-grade hosting to their clients. No need for DevOps experts or extra $ to deploy professional Jamstack sites.
+       <h2 style="font-size: 2.2rem; font-weight: 300; margin: 0 auto 0 auto; padding-bottom: 3rem; max-width: 600px;">
+        A zero-config tool that automates the whole deployment process with your favorite cloud providers. 
        </h2>
       </div>
       
-      <div class="header-button">
-       <a href="#get-started"><button>Instant Deploy with the CLI</button></a>
+      
+      <!-- <div class="header-button">
+       <a href="#get-started"><button>One Command Deploy</button></a>
        <a href="https://github.com/torus-tools/stack">   
         <button>
           Integrate SDKs to an App
         </button>
-      </a> 
+      </a>  -->
 
+      <div class="done bg-gradient-button">
+        <div class="bg-button p-1">
+          <a href="#get-started" style="text-decoration: none; color:#fafafa;">Deploy your site. It's super easy!</a>
+          </div>
+          </div>
 
       </div>
     </header>
 
     <section>
       <div class="container pt-5">
-        <h2 class="pb-3" style="font-size: 3.5rem;">A free deployment system that gives you greater:
+        <h2 class="pb-3" style="font-size: 3.5rem;">A free deployment system that gives you greater
         </h2>
         <div class="grid-benefits">
               <div class="card">
               <img src="img/speed_icon.svg" class="logo-benefits" alt="">
               <h3 class="card-title">Automation</h3>
-              <p>Automates the whole deployment process including domain operations, cloud infrastructure and content delivery saving you time and money.</p>
+              <p>Automates the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
             </div>
         
   
@@ -94,7 +99,7 @@
             <img src="img/secure_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Security</h3>
-              <p>Everything runs locally which means you don't have to share your API keys or information with third parties. Also no need to worry about fraudalent logins.</p>
+              <p>Everything runs locally which means you don't have to share your API keys or information with third parties.</p>
             </div>
           
   
@@ -102,7 +107,7 @@
             <img src="img/flexibility_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Flexibility</h3>
-              <p>Chose how you want to configure your stack.   You can generate them automatically or edit them in the Torus config file, in your AWS console or using cloudformation designer.</p>
+              <p>Chose how you configure your stack. Generate templates automatically, edit them in the Torus config file, in your AWS console or using the cloudformation designer.</p>
             </div>
           
   
@@ -110,7 +115,7 @@
             <img src="img/control_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Control</h3>
-              <p>Have full control of your stackand IaC templates.  Chose how you deploy and which cloud infrastructure providers you use.</p>
+              <p>Have full control of your IaC templates. Chose how you want to deploy and which services of cloud infrastructure providers you use.</p>
             </div>
           </div>
       </div>
@@ -120,14 +125,14 @@
     <div class="container text-center">
       <div class="pt-5">
       <h2 id="header-h2">Install Torus and deploy your first project in less than 1 minute.</h2>
-      <p>All best practices are baked in automatically (HTTPS, SSL, SLA, Global Edge Network). Deploy a Jamstack site that scales infinitely to an enterprise-grade global edge network.   We currently support AWS Cloud and Godaddy but more integrations are coming soon.  
+      <p>All best practices are added automatically (HTTPS, 99.99% SLA, Global Edge Network with instant cache invalidation). We currently support AWS Cloud and Godaddy but more integrations are coming soon.  
       </p>
     </div>
       <div class=" grid-get-started get-started pt-3 pb-3" id="get-started">
           <div class="neumorphic-1">
             <h4>1. Install Globally</h4>
             <p class="p-install">Make sure to have Nodejs12+ and NPM installed</p>
-            <button class="codebox">npm i -g torus-cli</button>
+            <button class="codebox">npm i -g @torus-tools/cli</button>
           </div>
           <div class="neumorphic-1">
             <h4>2. One time Config</h4>
@@ -136,7 +141,7 @@
           </div>
           <div class="neumorphic-1">
             <h4>3. Deploy</h4>
-            <p class="p-install">You must be in the root folder of your project</p>
+            <p class="p-install">Just one command. You must be in the root folder</p>
             <button class="codebox">torus deploy</button>
           </div>
         </ol>
@@ -160,24 +165,24 @@
   <div class="grid-features">
 
   <div class="card-features">
-    <h3 class="h3-features">Continous Deployment</h3>
-   <p class="p-features">Just `git push` or `torus deploy` to have you project live.</p>
+    <h3 class="h3-features">Cache Invalidation</h3>
+    <p class="p-features">Instanty updates the edge network's cache globally every time you make a change. </p>
   </div>
   <div class="card-features">
     <h3 class="h3-features">Free SLA</h3>
    <p class="p-features">Includes a 99.99% SLA automatically with all your builds</p>
   </div>
   <div class="card-features">
-    <h3 class="h3-features">Domain Transfer</h3>
-   <p class="p-features">Transfer your custom domain names automatically from different providers.</p>
+    <h3 class="h3-features">DNS Transfer</h3>
+   <p class="p-features">Automates the nameserver operation from different domain name registars.</p>
   </div>
   <div class="card-features">
-    <h3 class="h3-features">DNS</h3>
-   <p class="p-features">Automates the record/nameserver operations in your Domain Name Registar</p>
+    <h3 class="h3-features">External DNS</h3>
+   <p class="p-features">Use other DNS providers with cloudfront</p>
   </div>
   <div class="card-features">
-    <h3 class="h3-features">Cache Invalidation</h3>
-   <p class="p-features">Instanty updates the CDNs cache every time you make a change. </p>
+    <h3 class="h3-features">Continous Deployment</h3>
+   <p class="p-features">Just `git push` or `torus deploy` to have you project live.</p>
   </div>
   <div class="card-features">
     <h3 class="h3-features">Import Resources</h3>
@@ -201,10 +206,10 @@
    <p class="p-features">Creates per-stack IAM roles allowing you to asign team member per project</p>
   </div>
 
-  <!-- <div class="card-features">
-    <h3 class="h3-features">SSL HTTPS</h3>
-    <p>Adds HTTPS to every project automatically following best practices.</p>
-  </div> -->
+  <div class="card-features">
+    <h3 class="h3-features">HTTPS</h3>
+    <p class="p-features">Automatically adds free HTTPS to every project</p>
+  </div>
   
 </div>
 </section>
@@ -215,43 +220,52 @@
   <div class="container text-center pt-5">
     <div class="done bg-gradient-primary">
       <div class="bg-dark-purple p-1">
-        <p>Webiste Hosting is merely a commodity these days; theres lots of cloud prividers that have reached massive scale, establishing "market prices". Even though they all offer the necessary infrastructure/services to host a website, the process to achieve this is usally not as simple as it seems... But don't worry, We are changing this.</p>
+        <p style="font-size: 2.5rem; margin: 0;">"We are standardizing hosting throughout all cloud providers, giving users more control, lowering switching costs, ending vendor lock-in and democratizing the way content is published to the web"    </p>
+        <div style="display: flex; justify-content: center;">
+        <img src="img/gabriel_pic.png" style="border-radius: 50%; height: 80px; margin: 1rem 0;" alt="">
+        </div>
+        <p style="display: flex; justify-content: center; margin: 0; font-size: 1.6rem;">- Gabriel Kardonski <br> Lead Developer Torus Hosting </p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-   <section class="text-center p-top">
+   <section class="text-center pt-5">
      <div class="container">
      <h2>How it Works</h2>
 
      <div class="grid-sdk">
        <div>
          <p>Torus Hosting is made up of a full feature command line interface and 3 SDK's; Stack, Domains, and Content.
-           The CLI facilitates the interaction with the SDKs while the SDKs standardizes the different services among
+           The CLI facilitates the interaction with the SDKs while providing a great developer experience. The SDKs standardizes the different services among
            the different cloud providers and domain registrars.
          </p>
        </div>
 
-       <div class="card-sdk neumorphic-1">
+       <div class="card-sdk neumorphic-sdk">
+        <h3 class="sdk-title">The CLI</h3>
+        <p>A full feature command line interface made with OCLIF</p>
+      </div>
+
+       <div class="card-sdk neumorphic-sdk">
          <h3 class="sdk-title">1. Stack:</h3>
-         <p>A promise-based vanilla javascript SDK that generates and deploys JSON cloudformation templates for static websites
+         <p>A promise-based javascript SDK that generates and deploys JSON cloudformation templates for static websites
            in AWS. It uses the AWS SDK to create, and execute changesets in a particular sequence that enables
            automation of the entire process while maintaining a short deployment time.</p>
        </div>
 
 
-       <div class="card-sdk neumorphic-1">
+       <div class="card-sdk neumorphic-sdk">
          <h3 class="sdk-title">2. Domains:</h3>
-         <p>A promise-based vanilla javascript SDK for standarizing and managing nameserver and DNS operations accross multiple domain name registrars.</p>
+         <p>A promise-based javascript SDK for standarizing and managing nameserver and DNS operations accross multiple domain name registrars.</p>
        </div>
 
 
 
-       <div class="card-sdk neumorphic-1">
+       <div class="card-sdk neumorphic-sdk">
          <h3 class="sdk-title">3. Content:</h3>
-         <p>A promise-based vanilla javascript SDK for simultaneously updating content in s3 and the cache in Cloudfront.</p>
+         <p>A promise-based javascript SDK for simultaneously updating content in S3 and the cache in Cloudfront.</p>
        </div>
 
        <div class="pt-3">
@@ -290,7 +304,20 @@
     </div>
     </section> -->
 
-
+    <!-- ROADMAP -->
+    <section class="text-left p-top">
+      <div class="container">
+      <h2 class="text-center">Roadmap</h2>
+      <p>
+        Currently we only support AWS Cloud and Godaddy.  Soon we will be adding other major cloud and domain providers to offer you a multi provider experience.   You will be able to mix and match the best services from your favorite providers; all under one simple to use tool.
+        To do so, we will be switching from cloudformation to Terraform.
+      </p>
+      <p>
+        If you are interested in adding new providers create the feature request <a href="https://github.com/torus-tools/stack/issues" class="a-cost">here</a> and we will add it to our pipeline; or feel free to submit your own pull request.
+      </p>
+      </div>
+      </section>
+ 
 
   <!--Live Reload & Collaborate-->
   <section class="pt-5">
@@ -313,25 +340,26 @@
      <div class="footer-buttons pt-3 pb-3">
 
       <div class="btn-padding">
-        <a href="https://twitter.com/Torus_Tools?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-text="Check out Torus Hosting: An open source &amp; free deployment system." data-related="Torus_tools" data-show-screen-name="false" data-show-count="false">Follow @Torus_Tools</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/Torus_Hosting"> <img src="img/twitter_logo.svg" class="logo-footer" alt="twitter logo"></a>
       </div>
 
       <div class="btn-padding">
-      <a class="github-button" href="https://github.com/torus-tools/stack" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star torus-tools/stack on GitHub">Star</a>
+        <a href="https://github.com/torus-tools/stack"><img src="img/github_logo.svg" class="logo-footer" alt="github logo"></a> 
       </div>
 
       <div class="btn-padding">
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/torus-tools/stack/fork" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork torus-tools/stack on GitHub">Fork</a>      </div>    
+        <a href="https://www.npmjs.com/package/@torus-tools/content"><img src="img/npm_logo.svg" class="logo-footer" alt=""> </a>      
+      </div>    
        
       <div class="btn-padding">
-        <a href="docs.html"><button class="btn-docs">Docs</button> </a>
+        <a href="docs.html"><img src="img/docs_icon_2.svg" class="logo-footer" alt="docs logo"></a>
       </div>
 
-      </div>
+    </div>
 
       <div class="pb-3">
-        <h4 style="font-size: 2rem;" class="text-center pb-2">Sign up for important updates</h4>
+        <h4 style="font-size: 2rem;" class="text-center">Sign up for important updates</h4>
+        <p style="margin:0; font-size: 1.5rem;" class="text-center pb-2">no spam, we promise!</p>
         <div style="display: flex; justify-content: center;">
         <form action="#">
           <input style="padding: 1rem 9rem 1rem 8px; border-radius: 8px; color: #050505;" type="email" id="email" name="email" placeholder="Your Email Address" required="">
@@ -343,7 +371,7 @@
 <div style="background-color: #140028; padding: 1rem">
 
   <span>Powered by </span>
-  <span>Torus</span>
+  <span>Torus Hosting</span>
 
 </div>
   </footer>
