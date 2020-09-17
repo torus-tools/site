@@ -181,7 +181,7 @@ ol {
   height: 60px;
   float: left;
   padding: 8px;
-  margin: auto;
+  margin-right: 14px;
   
 }
 
@@ -712,30 +712,7 @@ input #Feedback {
 
 /* COLLAPSE */
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #050505;
-  overflow: hidden;
-  padding: 1% 4%;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav-logo {
-  font-size: 2.5rem;  
-}
-.nav-links {
-  float: right;
-  font-size: 1.5rem;
-}
 
 td{
   
@@ -773,8 +750,31 @@ tr#row-aws, #row-godaddy{
   margin: 0;
 }
 
-@media (min-width: 550px){
-  
+
+.nav-links {
+  float: right;
+  font-size: 1.5rem;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #050505;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav.nav-link, .topnav.icon{
+  padding: 14px 16px;
 }
 
 
@@ -816,6 +816,7 @@ tr#row-aws, #row-godaddy{
     float: none;
     display: block;
     text-align: left;
+    padding: 14px 16px;
   }
 }
 
@@ -826,6 +827,11 @@ tr#row-aws, #row-godaddy{
     margin-left: auto;
 }
 
+.nav-logo {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-left: 0px !important;  
+}
 
 @media (min-width: 768px){
   .grid-benefits{
