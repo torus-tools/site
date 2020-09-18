@@ -1,0 +1,123 @@
+
+              <!doctype html>
+                <html lang="en">
+                  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation for  made with Super Easy Docs">
+    <title> Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Docs Stylesheet -->
+    <link rel="stylesheet" href="../css/collapse.css">
+    <link href="../css/docs.css" rel="stylesheet">
+    <!-- Additional Stylesheets -->
+    
+    <!-- Favicon -->
+        
+  </head>
+
+                <body id="page-top">
+                
+  <nav class="topnav" id="myTopnav">
+  <!-- TORUS LOGO -->
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.55 80.65">
+    <defs>
+      <style class=>
+        .cls-1, .cls-0, .cls-2, .cls-3, .cls-4 {fill:none;stroke:#f1f2f2;stroke-miterlimit:10;stroke-width:2px}
+      </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_5" data-name="Layer 5">
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="49.34" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="31.95" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="14.36" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="64.98" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="24.27" rx="13.68" ry="6.32"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="66.21" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="15.67" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="56.94" rx="13.68" ry="6.32"/>
+        <circle class="cls-0 fade-0" cx="54.27" cy="40.7" r="9.97"/>
+      </g>
+    </g>
+  </svg>
+  
+  <a href="../index.html" class="nav-logo"><span>Torus</span></a>
+  
+  <div class="nav-links">
+    <a href="../pricing.html" class="nav-link"><span>Pricing</span></a>
+    <a href="tools.html" class="nav-link"><span>Tools</span></a>
+    <a href="index.html" class="nav-link"><span>Docs</span></a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img height="24px" src="img/nav.svg" alt="nav menu">
+  </a>
+</nav>
+  
+                  <div class="d-lg-flex" id="wrapper">
+                    
+  <div class="mobibar" id="sidebar-wrapper">
+    <div>
+      <div class="list-group list-group-flush">
+      <a href="#Torus_Content0" class="list-group-item list-group-item-action">Torus Content</a><a href="#Operations6" class="list-group-item list-group-item-action">Operations</a><a href="#Currently_Supp18" class="list-group-item list-group-item-action">Currently Supporting</a><a href="#Features24" class="list-group-item list-group-item-action">Features</a>
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Getting_starte36-dropdown">Getting started
+          <i id="Getting_starte36-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Getting_starte36-dropdown">
+          <a href="#Installation38"><span>Installation</span></a><a href="#Usage48"><span>Usage</span></a>
+        </div>
+      </div>
+      
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="API66-dropdown">API
+          <i id="API66-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="API66-dropdown">
+          <a href="#listContent_do68"><span>listContent (domain)</span></a><a href="#listFiles_root84"><span>listFiles (root, path)</span></a><a href="#downloadContent102"><span>downloadContent(domain, output, files, cli)</span></a><a href="#uploadContent_124"><span>uploadContent (domain, files, purge, updates, dir, cli)</span></a><a href="#deleteContentd150"><span>deleteContent(domain, files)</span></a><a href="#invalidateCache168"><span>invalidateCache (domain, files)</span></a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+                    <div id="page-content-wrapper">
+                      <div class="container docs">
+                        <section id="Torus_Content0"><h1>Torus Content</h1><p>A promise-based javascript SDK that facilitates operations related to content stored in AWS S3 as well as cache invalidations in AWS cloudfront.</p></section><section id="Operations6"><h1>Operations</h1><ul><li>list</li><li> download</li><li> upload</li><li> delete</li></ul></section><section id="Currently_Supp18"><h1>Currently Supporting</h1><ul><li>AWS</li></ul></section><section id="Features24"><h1>Features</h1><ul><li>Option to only upload files that have been updated</li><li> Automatically update cache in cloudfront for updated files that already exist</li><li> provides a single method that deletes all of the content in a particular bucket</li><li> Automatically creates nonexistent directories for downloaded files </li></ul></section><section id="Getting_starte36"><h1>Getting started</h1><h2 id=Installation38>Installation</h2><pre class="pre code"><code>
+npm i @torus-tools/content
+</pre></code><h2 id=Usage48>Usage</h2><p>The example bellow publishes updated content to s3 and creates an invalidation in cloudfront for the updated assets.</p><pre class="pre code"><code>
+const {listFiles, uploadContent} = require('@torus-tools/content')
+
+let files = await ListFiles().catch(err=<span>></span> console.log(err))
+await uploadContent('yoursite.com', files, true, true).catch(err =<span>></span> console.log(err))
+</pre></code></section><section id="API66"><h1>API</h1><h2 id=listContent_do68>listContent (domain)</h2><ul><li><strong>description</strong>: Lists all the objects from the S3 bucket of the specified domain.</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: The domain of your site or bucket (i.e. yoursite.com).</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: An array of objects that contain the properties for all of the objects in the given bucket.</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=listFiles_root84>listFiles (root, path)</h2><ul><li><strong>description</strong>: Gets the file paths for all of the files in the given directory.</li><li> <strong>params</strong>: (domain)</li><li> <strong>root</strong>: Root directory for the files that you want to upload. Default is the current working directory.</li><li> <strong>path</strong>: Path of a directory for which you want to retrieve files.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: An array of strings that contains all of the file paths.</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=downloadContent102>downloadContent(domain, output, files, cli)</h2><ul><li><strong>description</strong>: downloads content from a given bucket to a local output_path specified. By default it will download all files and create/overwrite content in the current working directory. When provided the files parameter, it will only download the given files.</li><li> <strong>params</strong>: (domain, output, files, cli)</li><li> <strong>domain</strong>: STRING: REQUIRED: the domain of your site i.e. yoursite.com you want to download files from</li><li> <strong>output</strong>: STRING: Desired output directory path to save the downloaded files. By default its the current working directory.</li><li> <strong>files</strong>: ARRAY: The file paths, or key names, that uniquely identifies the objects stored in the bucket. If none are provided, it downloads all of the objects.</li><li> <strong>cli</strong>: OBJECT: Recieves the cli object from oclif.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All done!')</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=uploadContent_124>uploadContent (domain, files, purge, updates, dir, cli)</h2><ul><li><strong>description</strong>: Uploads content to the bucket of the given domain. If the updates param is provided it will only upload files that were modified after their last upload. When the purge param is provided it will also create a CloudFront invalidation for any updated files that were already chached.</li><li> <strong>params</strong>: (domain, files, resetCache, cli)</li><li> <strong>domain</strong>: STRING: REQUIRED: the domain of your site i.e. yoursite.com you want to upload updated files to</li><li> <strong>files</strong>: ARRAY: REQUIRED: The file paths that you want to upload.</li><li> <strong>purge</strong>: BOOLEAN: creates an invalidation in the cloudfront distribution for the given files.</li><li> <strong>updates</strong>: BOOLEAN: set to true if you only want to publish files that were updated.</li><li> <strong>dir</strong>: STRING: Root directory that you want to upload. By default its the current working directory.</li><li> <strong>cli</strong>: OBJECT: Recieves the cli object from oclif.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All done')</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=deleteContentd150>deleteContent(domain, files)</h2><ul><li><strong>description</strong>: Deletes content in a bucket belonging to a domain. If files are provided it will only delete those specific files. By default it deletes all of the files.</li><li> <strong>params</strong>: (domain, files)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>files</strong>: ARRAY: REQUIRED: The file paths, or key names, that uniquely identifies the objects you want to delete. If none are provided, it deletes all of the objects.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All done')</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=invalidateCache168>invalidateCache (domain, files)</h2><ul><li><strong>description</strong>: Creates an invalidation in the cloudfront distribution for the given domain.</li><li> <strong>params</strong>: (domain, files)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of the site i.e. yoursite.com</li><li> <strong>files</strong>: ARRAY: REQUIRED: The routes or file paths that you want to purge from cache.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('all done!')</li><li> <strong>reject</strong>: (error)</li>
+                        </section>
+                      </div>
+                      
+<footer class="bg-black sticky-bottom text-center text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="text-lg-left">Copyright &copy; Super Easy Forms 2019</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-lg-right">powered by Super Easy Docs</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+                    </div>
+                  </div>
+                  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="../js/docs.js"></script>
+
+                </body>
+              </html>        
+              
