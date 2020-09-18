@@ -41,7 +41,7 @@ h2#header-h2{
 }
 
 .font-banner{
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   display: inline-block;
 
@@ -441,7 +441,7 @@ text-align: center;
   list-style-position: inside;
   margin: 0;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   text-align: left;
 
@@ -471,6 +471,7 @@ text-align: center;
   box-shadow: 
 12px 12px 12px 0 rgba(0, 0, 0, 0.6),
 -8px -8px 18px 0 rgba(6, 6, 6, 0.4);
+border-radius: 8px;
 }
 
 
