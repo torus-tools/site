@@ -24,7 +24,7 @@
 				for(let item in obj){	
 					formOutput += '<span><b>' + item + ': </b>' + obj[item] + '</span><br>'; 
 				}
-				var emailBody = ''.replace('<FormOutput>', formOutput)
+				var emailBody = 'Someone has just registered for the torus.host mailing list. Bellow are their details  <FormOutput>'.replace('<FormOutput>', formOutput)
 				dynamodb.putItem(params, function(err, data) {
 					if (err) {
 						callback(err);
@@ -47,7 +47,7 @@
 								}, 
 								Subject: {
 									Charset: "UTF-8", 
-									Data: ""
+									Data: "Torus Hosting mailing list"
 								}
 							}, 
 							ReplyToAddresses: [], 
