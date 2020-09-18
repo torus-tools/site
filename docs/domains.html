@@ -1,0 +1,122 @@
+
+              <!doctype html>
+                <html lang="en">
+                  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation for  made with Super Easy Docs">
+    <title> Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Docs Stylesheet -->
+    <link rel="stylesheet" href="../css/collapse.css">
+    <link href="../css/docs.css" rel="stylesheet">
+    <!-- Additional Stylesheets -->
+    
+    <!-- Favicon -->
+        
+  </head>
+
+                <body id="page-top">
+                
+  <nav class="topnav" id="myTopnav">
+  <!-- TORUS LOGO -->
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.55 80.65">
+    <defs>
+      <style class=>
+        .cls-1, .cls-0, .cls-2, .cls-3, .cls-4 {fill:none;stroke:#f1f2f2;stroke-miterlimit:10;stroke-width:2px}
+      </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_5" data-name="Layer 5">
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="49.34" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="31.95" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="14.36" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="64.98" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="24.27" rx="13.68" ry="6.32"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="66.21" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="15.67" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="56.94" rx="13.68" ry="6.32"/>
+        <circle class="cls-0 fade-0" cx="54.27" cy="40.7" r="9.97"/>
+      </g>
+    </g>
+  </svg>
+  
+  <a href="../index.html" class="nav-logo"><span>Torus</span></a>
+  
+  <div class="nav-links">
+    <a href="../pricing.html" class="nav-link"><span>Pricing</span></a>
+    <a href="tools.html" class="nav-link"><span>Tools</span></a>
+    <a href="index.html" class="nav-link"><span>Docs</span></a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img height="24px" src="img/nav.svg" alt="nav menu">
+  </a>
+</nav>
+  
+                  <div class="d-lg-flex" id="wrapper">
+                    
+  <div class="mobibar" id="sidebar-wrapper">
+    <div>
+      <div class="list-group list-group-flush">
+      <a href="#Torus_Domains0" class="list-group-item list-group-item-action">Torus Domains</a><a href="#Currently_Supp8" class="list-group-item list-group-item-action">Currently Supporting</a><a href="#Records_Format20" class="list-group-item list-group-item-action">Records Format</a><a href="#Record_Types46" class="list-group-item list-group-item-action">Record Types</a>
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="API76-dropdown">API
+          <i id="API76-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="API76-dropdown">
+          <a href="#getNameservers100"><span>getNameservers(domain)</span></a><a href="#updateNameserve118"><span>updateNameservers(domain, nameservers)</span></a><a href="#listRecordsdom138"><span>listRecords(domain)</span></a><a href="#upsertRecordsd156"><span>upsertRecords(domain, records)</span></a><a href="#deleteRecordsd186"><span>deleteRecords(domain, records)</span></a><a href="#deleteAllRecord208"><span>deleteAllRecords(doamin, records)</span></a><a href="#createRedirect224"><span>createRedirect(domain, url)</span></a><a href="#addRecorddomai248"><span>addRecord(domain, records)</span></a><a href="#getZonedomain_278"><span>getZone(domain)</span></a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+                    <div id="page-content-wrapper">
+                      <div class="container docs">
+                        <section id="Torus_Domains0"><h1>Torus Domains</h1><p>A promise-based javascript SDK that standarizes interactions with various different domain registrars providers.</p></section><section id="Currently_Supp8"><h1>Currently Supporting</h1><ul><li>AWS</li><li> Godaddy</li></ul><strong>If you are interested in adding new providers create the feature request and we will add it to our pipeline; or feel free to submit your own PR</strong> :sunglasses:</section><section id="Records_Format20"><h1>Records Format</h1><p>the records parameter has the following format</p><pre class="pre code"><code>
+{
+  name:"example.com",  //traffic coming into (root domain or sub-domain)
+  data: "192.0.2.44",  //route traffic to somewhere (an ip or resource ARN)
+  type: "CNAME",  //type of record.
+  ttl: 3600   //ttl for the record if required
+  alias: true|false   //depending on this value the record will either have a resourceRecords attribute or an aliasTarget attribute in AWS
+}
+</pre></code></section><section id="Record_Types46"><h1>Record Types</h1><ul><li>A</li><li> AAAA</li><li> CAA</li><li> CNAME</li><li> MX</li><li> NAPTR</li><li> NS</li><li> PTR</li><li> SOA</li><li> SPF</li><li> SRV</li><li> TXT</li></ul></section><section id="API76"><h1>API</h1><p>The API standardizes operations accross different providers. As shown in the example below, all of the methods must be used in the format <code class="code">[PROVIDER].method</code></p><pre class="pre code"><code>
+const {godaddy} = require('@torus-tools/domains')
+
+godaddy.getNameservers('mydomain.com')
+.then(data=<span>></span> console.log(data))
+.catch(err=<span>></span>console.log(err))
+
+</pre></code><h2 id=getNameservers100>getNameservers(domain)</h2><ul><li><strong>description</strong>: gets the nameservers for a particular domain</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: (nameservers)</li><ul><li> <strong>nameservers</strong>: an array of nameserver addresses</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=updateNameserve118>updateNameservers(domain, nameservers)</h2><ul><li><strong>description</strong>: updates the nameservers for a particular domain</li><li> <strong>params</strong>: (domain, nameservers)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>nameservers</strong>: ARRAY: REQUIRED: an array of nameserver strings</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>nameservers</strong>: an array of nameserver addresses</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=listRecordsdom138>listRecords(domain)</h2><ul><li><strong>description</strong>: Lists the records of a particular domain</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>recordSet</strong>: an object with the record set of the given domain</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=upsertRecordsd156>upsertRecords(domain, records)</h2><ul><li><strong>description</strong>: It will create or update the specified records for a given domain. If one of the records exists it will updated, otherwise it will be created.</li><li> <strong>params</strong>: (domain, records)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>records</strong>: OBJECT: REQUIRED: the record set that includes:</li><ul><li> Record name</li><li> Record type</li><li> Record data</li><li> Record ttl</li></ul><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>record</strong>: an array with the new record data that has been created or updated</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=deleteRecordsd186>deleteRecords(domain, records)</h2><ul><li><strong>description</strong>: deletes the specified records for a given domain.</li><li> <strong>params</strong>: (domain, records)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>records</strong>: OBJECT: REQUIRED: the record sets that will be deleted</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('recordSet deleted')</li><ul><li> <strong>recordSet</strong>: an object with the record set hat has been deleted</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=deleteAllRecord208>deleteAllRecords(doamin, records)</h2><ul><li><strong>description</strong>: Deletes all DNS records for a given domain.</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All recordSets deleted')</li><li> <strong>reject</strong>: (error)</li></ul><h2 id=createRedirect224>createRedirect(domain, url)</h2><ul><li><strong>description</strong>: creates a 301 redirect for the given domian to a specified url.</li><li> <strong>params</strong>: (domain, url)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>url</strong>: STRING: REQUIRED: the url address you want to redirect </li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>type</strong>: a string with the value "REDIRECT_PERMANENT"</li><li> <strong>url</strong>: a string for the redirect url address</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=addRecorddomai248>addRecord(domain, records)</h2><ul><li><strong>description</strong>: It will add the specified records to the given domain. </li><li> <strong>params</strong>: (domain, records)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>records</strong>: OBJECT: REQUIRED: the record set that includes:</li><ul><li> Record name</li><li> Record type</li><li> Record data</li><li> Record ttl</li></ul><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>record</strong>: an object with the record that has been added</li></ul><li> <strong>reject</strong>: (error)</li></ul><h2 id=getZonedomain_278>getZone(domain)</h2><ul><li><strong>description</strong>: gets the DNS zone Id for a given domain.</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ('All Done')</li><ul><li> <strong>HostedZones</strong>: An array with the hosted zone ID of given domain.</li></ul><li> <strong>reject</strong>: ('no hosted zones exist for the given domain')</li>
+                        </section>
+                      </div>
+                      
+<footer class="bg-black sticky-bottom text-center text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="text-lg-left">Copyright &copy; Super Easy Forms 2019</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-lg-right">powered by Super Easy Docs</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+                    </div>
+                  </div>
+                  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="../js/docs.js"></script>
+
+                </body>
+              </html>        
+              
