@@ -361,9 +361,10 @@
         <h4 style="font-size: 2rem;" class="text-center">Sign up for important updates</h4>
         <p style="margin:0; font-size: 1.5rem;" class="text-center pb-2">no spam, we promise!</p>
         <div style="display: flex; justify-content: center;">
-        <form action="#">
-          <input style="padding: 1rem 9rem 1rem 8px; border-radius: 8px; color: #050505;" type="email" id="email" name="email" placeholder="Your Email Address" required="">
-          <button class="btn-signup" type="submit" id="">Subscribe</button>
+          <form id="torusmailinglist-form" alt="Form by Super Easy Forms" class="pb-3" action="#">
+          <input style="padding: 1rem 9rem 1rem 8px; border-radius: 8px; color: #050505;" type="email" id="email" name="email" placeholder="Email" required>
+          <button class="btn-signup" type="submit" id="torusmailinglist-btn">Subscribe</button>
+          <h5 id="torusmailinglist-status" class="text-secondary" style="display:none;">Thanks for subscribing</h5>
         </form>
         </div>
        </div>
@@ -378,5 +379,11 @@
 
 
     <script src="js/collapse.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      </script>
+      <script src="./js/mailing_list.js"></script>
   </body>
 </html>
