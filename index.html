@@ -40,7 +40,7 @@
   <div class="nav-links">
     <a href="pricing.html" class="nav-link"><span>Pricing</span></a>
     <a href="tools.html" class="nav-link"><span>Tools</span></a>
-    <a href="docs.html" class="nav-link"><span>Docs</span></a>
+    <a href="docs/index.html" class="nav-link"><span>Docs</span></a>
   </div>
 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,14 +54,14 @@
            class="txt-rotate"
            data-period="2000"
            data-rotate='[ "All in one", "Open source", "Unlimited", "Effortless"]'></span>
-      <br><span id="color-change">hosting</span> for 
-        <br>static websites
+      <br><span id="color-change">hosting</span> 
+        <br>for static websites
       </h1>
       </div>
 
       <div class="container">
        <h2 style="font-size: 2.2rem; font-weight: 300; margin: 0 auto 0 auto; padding-bottom: 3rem; max-width: 600px;">
-        A zero-config tool that automates the whole deployment process with your favorite cloud providers. 
+        A simple to use CLI that automates the whole deployment process with your favorite cloud providers. 
        </h2>
       </div>
       
@@ -76,7 +76,7 @@
 
       <div class="done bg-gradient-button">
         <div class="bg-button p-1">
-          <a href="#get-started" style="text-decoration: none; color:#fafafa;">Deploy your site. It's super easy!</a>
+          <a href="#get-started" style="text-decoration: none; color:#fafafa; font-size: 1.6rem;">Deploy your site with one command</a>
           </div>
           </div>
 
@@ -85,13 +85,13 @@
 
     <section>
       <div class="container pt-5">
-        <h2 class="pb-3" style="font-size: 3.5rem;">A free deployment system that gives you greater
+        <h2 class="pb-3" style="font-size: 3.5rem;">A free deployment system that gives you more
         </h2>
         <div class="grid-benefits">
               <div class="card">
               <img src="img/speed_icon.svg" class="logo-benefits" alt="">
               <h3 class="card-title">Automation</h3>
-              <p>Automates the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
+              <p class="p-main">Automates the whole deployment process including domain operations, cloud infrastructure and content delivery.</p>
             </div>
         
   
@@ -99,7 +99,7 @@
             <img src="img/secure_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Security</h3>
-              <p>Everything runs locally which means you don't have to share your API keys or information with third parties.</p>
+              <p class="p-main">Everything runs locally which means you don't have to share your API keys or information with third parties.</p>
             </div>
           
   
@@ -107,7 +107,7 @@
             <img src="img/flexibility_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Flexibility</h3>
-              <p>Chose how you configure your stack. Generate templates automatically, edit them in the Torus config file, in your AWS console or using the cloudformation designer.</p>
+              <p class="p-main">Chose how you configure your stack. Generate templates automatically, edit them in the Torus config file, in your AWS console or using the cloudformation designer.</p>
             </div>
           
   
@@ -115,7 +115,7 @@
             <img src="img/control_icon.svg" class="logo-benefits" alt="">
   
               <h3 class="card-title">Control</h3>
-              <p>Have full control of your IaC templates. Chose how you want to deploy and which services of cloud infrastructure providers you use.</p>
+              <p class="p-main">Have full control of your IaC templates. Chose how you want to deploy and which services of cloud infrastructure providers you use.</p>
             </div>
           </div>
       </div>
@@ -125,24 +125,24 @@
     <div class="container text-center">
       <div class="pt-5">
       <h2 id="header-h2">Install Torus and deploy your first project in less than 1 minute.</h2>
-      <p>All best practices are added automatically (HTTPS, 99.99% SLA, Global Edge Network with instant cache invalidation). We currently support AWS Cloud and Godaddy but more integrations are coming soon.  
+      <p class="p-main">All best practices are added automatically (HTTPS, 99.99% SLA, Global Edge Network with instant cache invalidation). We currently support AWS Cloud and Godaddy but more integrations are coming soon.  
       </p>
     </div>
       <div class=" grid-get-started get-started pt-3 pb-3" id="get-started">
           <div class="neumorphic-1">
             <h4>1. Install Globally</h4>
-            <p class="p-install">Make sure to have Nodejs12+ and NPM installed</p>
+            <p class="p-install p-main">Make sure to have Nodejs12+ and NPM installed</p>
             <button class="codebox">npm i -g @torus-tools/cli</button>
           </div>
           <div class="neumorphic-1">
             <h4>2. One time Config</h4>
-            <p class="p-install">Configure your cloud and domain providers only once</p>
-            <button class="codebox">torus init -g</button>
+            <p class="p-install p-main">Configure your cloud and domain providers globally</p>
+            <button class="codebox">torus init -g -p=aws</button>
           </div>
           <div class="neumorphic-1">
             <h4>3. Deploy</h4>
-            <p class="p-install">Just one command. You must be in the root folder</p>
-            <button class="codebox">torus deploy</button>
+            <p class="p-install p-main">You must be in the root folder of your project</p>
+            <button class="codebox">torus stack create prod</button>
           </div>
         </ol>
       </div>
@@ -152,7 +152,7 @@
     <section>
       <div class="pt-5 container">
       <video class="deploy-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-        <source src="video/arjan_deploy_video.mp4">
+        <source src="video/torus_host_video.mp4">
       </video>
       </div>
     </section>
@@ -220,9 +220,9 @@
   <div class="container text-center pt-5">
     <div class="done bg-gradient-primary">
       <div class="bg-dark-purple p-1">
-        <p style="font-size: 2.5rem; margin: 0;">"We are standardizing hosting throughout all cloud providers, giving users more control, lowering switching costs, ending vendor lock-in and democratizing the way content is published to the web"    </p>
+        <p class="p-quote">"We are standardizing hosting throughout all cloud providers, giving users more control, lowering switching costs, ending vendor lock-in and democratizing the way content is published to the web"    </p>
         <div style="display: flex; justify-content: center;">
-        <img src="img/gabriel_pic.png" style="border-radius: 50%; height: 80px; margin: 1rem 0;" alt="">
+        <img src="img/gabriel_profile_pic.jpeg" style="border-radius: 50%; height: 80px; margin: 1rem 0;" alt="">
         </div>
         <p style="display: flex; justify-content: center; margin: 0; font-size: 1.6rem;">- Gabriel Kardonski <br> Lead Developer Torus Hosting </p>
       </div>
@@ -237,36 +237,41 @@
 
      <div class="grid-sdk">
        <div>
-         <p>Torus Hosting is made up of a full feature command line interface and 3 SDK's; Stack, Domains, and Content.
-           The CLI facilitates the interaction with the SDKs while providing a great developer experience. The SDKs standardizes the different services among
-           the different cloud providers and domain registrars.
+         <p class="p-main">Torus Hosting is made up of a multi command line interface and 4 SDK's; Stack, Domains, Content and Init.
+           The CLI facilitates the interaction with the SDKs. The SDKs standardizes the different services among
+           the different cloud providers and domain registrars. You can also build on top of the SDKs without the use of the CLI. 
          </p>
        </div>
 
        <div class="card-sdk neumorphic-sdk">
         <h3 class="sdk-title">The CLI</h3>
-        <p>A full feature command line interface made with OCLIF</p>
+        <p class="p-main">A multi command line interface made with OCLIF that provides a great developer experience.</p>
       </div>
 
        <div class="card-sdk neumorphic-sdk">
-         <h3 class="sdk-title">1. Stack:</h3>
-         <p>A promise-based javascript SDK that generates and deploys JSON cloudformation templates for static websites
+         <h3 class="sdk-title">Stack:</h3>
+         <p class="p-main">A promise-based javascript SDK that generates and deploys JSON cloudformation templates for static websites
            in AWS. It uses the AWS SDK to create, and execute changesets in a particular sequence that enables
            automation of the entire process while maintaining a short deployment time.</p>
        </div>
 
 
        <div class="card-sdk neumorphic-sdk">
-         <h3 class="sdk-title">2. Domains:</h3>
-         <p>A promise-based javascript SDK for standarizing and managing nameserver and DNS operations accross multiple domain name registrars.</p>
+         <h3 class="sdk-title">Domains:</h3>
+         <p class="p-main">A promise-based javascript SDK for standarizing and managing nameserver and DNS operations accross multiple domain name registrars.</p>
        </div>
 
 
 
        <div class="card-sdk neumorphic-sdk">
-         <h3 class="sdk-title">3. Content:</h3>
-         <p>A promise-based javascript SDK for simultaneously updating content in S3 and the cache in Cloudfront.</p>
+         <h3 class="sdk-title">Content:</h3>
+         <p class="p-main">A promise-based javascript SDK for simultaneously updating content in S3 and the cache in Cloudfront.</p>
        </div>
+
+       <div class="card-sdk neumorphic-sdk">
+        <h3 class="sdk-title">Config:</h3>
+        <p class="p-main">A promise-based javascript SDK for configuring Torus globally in your machine, or on a per-project basis.</p>
+      </div>
 
        <div class="pt-3">
          <img class="img-diagram" src="img/torus-hosting-diagram.svg" alt="architecural diagram torus hosting">
@@ -276,7 +281,7 @@
     </div>
   </section>
 
-<section class="pt-5"> 
+<section class="pt-3"> 
   <div class="container">
       <div>
         <h5 class="font-banner">Want to learn more?  </h5> 
@@ -308,11 +313,16 @@
     <section class="text-left p-top">
       <div class="container">
       <h2 class="text-center">Roadmap</h2>
-      <p>
+      <p class="p-main">
         Currently we only support AWS Cloud and Godaddy.  Soon we will be adding other major cloud and domain providers to offer you a multi provider experience.   You will be able to mix and match the best services from your favorite providers; all under one simple to use tool.
         To do so, we will be switching from cloudformation to Terraform.
       </p>
-      <p>
+      <p class="p-main">
+       We are adding continuous integration
+       for popular front end frameworks such as React, Gatsby js, Svelte, Vue, Ember and others.  You will able to use CicleCI which has a very generous free plan for starters or AWS codebuild for a more robust pay as you use solution. 
+      </p>
+
+      <p class="p-main">
         If you are interested in adding new providers create the feature request <a href="https://github.com/torus-tools/stack/issues" class="a-cost">here</a> and we will add it to our pipeline; or feel free to submit your own pull request.
       </p>
       </div>
@@ -325,7 +335,7 @@
       <div class="grid-sdk">
           <div class="text-center text-md-left">
             <h4 class="gradient-text" style="font-size: 5rem;">Join Us</h4> 
-            <p>We are a fully open source project and welcome everyone to join us. If you are interested check out our contribution guide and jump into the project board.</p>
+            <p class="p-main">We are a fully open source project and welcome everyone to join us. If you are interested check out our contribution guide and jump into the project board.</p>
           </div>
           <div class="pb-3">
             <h3 style="text-align: center;">Click the board</h3>

@@ -1,0 +1,154 @@
+
+              <!doctype html>
+                <html lang="en">
+                  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation for  made with Super Easy Docs">
+    <title> Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Docs Stylesheet -->
+    <link rel="stylesheet" href="../css/collapse.css">
+    <link href="../css/docs.css" rel="stylesheet">
+    <!-- Additional Stylesheets -->
+    
+    <!-- Favicon -->
+        
+  </head>
+
+                <body id="page-top">
+                
+  <nav class="topnav" id="myTopnav">
+  <!-- TORUS LOGO -->
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.55 80.65">
+    <defs>
+      <style class=>
+        .cls-1, .cls-0, .cls-2, .cls-3, .cls-4 {fill:none;stroke:#f1f2f2;stroke-miterlimit:10;stroke-width:2px}
+      </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_5" data-name="Layer 5">
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="49.34" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-4 fade-4" cx="54.27" cy="31.95" rx="53.27" ry="18.57"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="14.36" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="64.98" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="24.27" rx="13.68" ry="6.32"/>
+        <ellipse class="cls-2 fade-2" cx="54.27" cy="66.21" rx="21.5" ry="8.8"/>
+        <ellipse class="cls-3 fade-3" cx="54.27" cy="15.67" rx="42.09" ry="14.67"/>
+        <ellipse class="cls-1 fade-1" cx="54.27" cy="56.94" rx="13.68" ry="6.32"/>
+        <circle class="cls-0 fade-0" cx="54.27" cy="40.7" r="9.97"/>
+      </g>
+    </g>
+  </svg>
+  
+  <a href="../index.html" class="nav-logo"><span>Torus</span></a>
+  
+  <div class="nav-links">
+    <a href="../pricing.html" class="nav-link"><span>Pricing</span></a>
+    <a href="tools.html" class="nav-link"><span>Tools</span></a>
+    <a href="index.html" class="nav-link"><span>Docs</span></a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img height="24px" src="img/nav.svg" alt="nav menu">
+  </a>
+</nav>
+  
+                  <div class="d-lg-flex" id="wrapper">
+                    
+  <div class="mobibar" id="sidebar-wrapper">
+    <div>
+      <div class="list-group list-group-flush">
+      
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Torus_Stack0-dropdown">Torus Stack
+          <i id="Torus_Stack0-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Torus_Stack0-dropdown">
+          <a href="#Features10"><span>Features</span></a><a href="#Getting_Started24"><span>Getting Started</span></a>
+        </div>
+      </div>
+      <a href="#Architecture60" class="list-group-item list-group-item-action">Architecture</a><a href="#setups72" class="list-group-item list-group-item-action">setups</a><a href="#How_it_Works90" class="list-group-item list-group-item-action">How it Works</a><a href="#Cost_breakdown106" class="list-group-item list-group-item-action">Cost breakdown (from AWS)</a><a href="#Programmatic_U134" class="list-group-item list-group-item-action">Programmatic Usage</a>
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="API146-dropdown">API
+          <i id="API146-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="API146-dropdown">
+          <a href="#stackExistsdom150"><span>stackExists(domain)</span></a><a href="#resourceExists.168"><span>resourceExists.resource(domain)</span></a><a href="#generateTemplat194"><span>generateTemplate(domain, stack, config, template, overwrite)</span></a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+                    <div id="page-content-wrapper">
+                      <div class="container docs">
+                        <section id="Torus_Stack0"><h1>Torus Stack</h1><p>A promise-based javascript SDK that generates and deploys JSON cloudformation templates for static websites in AWS. It uses the AWS SDK to create, and execute changesets in a particular sequence that enables automation of the entire process while maintaining a short deployment time.</p><p>You are free to customize the generated cloudformation template or its resources individually in any way you want using the AWS console/CLIs/SDKs and/or the torus stack SDK/CLI command. You can also push the arjan_config to github and enable other team-members (with permission) to collaborate on the stack.</p><h2 id=Features10>Features</h2><ul><li>Creates a single cloudformation template</li><li> Saves your cloudformation changesets locally</li><li> Automatically imports existing resources for a given domain in AWS</li><li> Adds continous deployment with github using codepipeline</li><li> Completely open source</li><li> Responsive community support 🙂</li></ul><h2 id=Getting_Started24>Getting Started</h2><strong>Prerequisites</strong><ul><li>An AWS account </li><li> node and npm</li><li> The latest version of the Arjan CLI</li></ul><strong>Deploy a static site with a CDN and HTTPS</strong> <ul><li>pop up your terminal, go into your desired project <code class="code">cd project_name</code>, and run <code class="code">arjan stack create prod</code></li></ul><ul><li><strong>When using Torus Tools you are using your own AWS account from your own machine.</strong></li><li> <strong>Any charges incurred by your websites will be billed directly from AWS to your AWS account.</strong></li><li> <strong>Torus Tools does NOT have any access to your AWS account/bill.</strong></li></ul></section><section id="Architecture60"><h1>Architecture</h1><p>Because the content in a static site doesnt have to be processed on a request basis it can be served completely from a server’s cache, or a cheaper cloud based object storage solution like AWS s3. To place the content closer to the end users, provide faster response times, and a secure url, a CDN (content distribution network) can be added.</p>!<a href='img/jam_stack_architecture.png'>The CDN fetches contet from the origin (s3 bucket) and distributes it to several edge locations scattered around the globe.</a></section><section id="setups72"><h1>setups</h1><p>For an easier development workflow we have defined some setups that include Dev, Test and Prod (production). You can customize these by additionally providing flags.</p><strong>dev → test → prod</strong><ol><li><strong>Dev:</strong> public S3 bucket</li><li> <strong>Test:</strong> public S3 root bucket, www reroute bucket and a route53 hosted zone.</li><li> <strong>Prod:</strong> public S3 root bucket, www reroute bucket, route53 hosted zone, cloudfront distribution, ACM certificate</li></ol></section><section id="How_it_Works90"><h1>How it Works</h1><p>The Torus Stack SDK has a series of methods that take care of generating/provisioning cloudformation templates. The deployment process for a complete stack will first deploy a cloudformation template with an s3 bucket, public policy and a hosted zone. Then it will update it with a cloudfront distribution.</p><p>If there are existing buckets/cdn's/hosted zones for the given domain, torus will propmpt you to confirm if you want to import those resources.</p> <img src="../img/stack_command_order.png" class="w-100 p-5" alt=""> </section><section id="Cost_breakdown106"><h1>Cost breakdown (from AWS)</h1><p>This is a breakdown of the costs of hosting a static site in AWS</p><p>Let’s say your website uses CloudFront for a month (30 days), and the site has 1,000 visitors each day for that month. Each visitor clicked 1 page that returned a single object (1 request) and they did this once each day for 30 days. Turns out each request is 1MB for the amount of data transferred, so in total for the month that comes to 30,000MB or 29GB (1GB = 1,024MB). Half the requests are from the US and half are from Europe, so your monthly total for data transferred comes to $2.47. Also, each click is an HTTP request, so for the month that equals 30,000 HTTP requests, which comes to a total of $0.02 for the month. Adding the two values together, the total cost for using CloudFront for this example would be $2.49 for the month.</p><table class="table table-hover">
+<tr><th> <strong>Resource</strong>   </th><th> <strong>Consumption</strong>      </th><th> <strong>Cost</strong>   </th></tr>
+<tr>
+<td>Cloudfront</td><td>29GB bandwith</td><td>$ 2.47</td></tr>
+<tr>
+<td>Cloudfront</td><td>30,000 http requests</td><td>$ 0.02</td></tr>
+<tr>
+<td>Route53</td><td>1 Hosted Zone</td><td>$ 0.50</td></tr>
+<tr>
+<td>s3</td><td>5GB storage</td><td>$ 0.15</td></tr>
+<tr>
+<td><strong>Total Cost</strong></td><td>------------------</td><td><strong>$ 3.14</strong></td></tr>
+</table></section><section id="Programmatic_U134"><h1>Programmatic Usage</h1><pre class="pre code"><code>const {deployStack} = require('../lib/deployStack')
+
+deployStack('testingsit.com', {bucket:true}, {index:'index.html', error:'error.html', providers:{bucket:'aws'}}, true)
+</pre></code></section><section id="API146"><h1>API</h1><h2 id=stackExistsdom150>stackExists(domain)</h2><ul><li><strong>description</strong>: determines wether or not a stack exists for a given domain. If it does exist it returns the stack's ID.</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: (stackID | null)</li><ul><li> <strong>stackID</strong>: STRING: ID or ARN (Amazon resource number) of the existing resource</li></ul><li> <strong>reject</strong>: (error) </li></ul><h2 id=resourceExists.168>resourceExists.resource(domain)</h2><ul><li><strong>description</strong>: determines wether or not a particular resource exists for a given domain. If it does exist it returns the resource's ID/ARN Resources include:</li><li> CloudFrontDist</li><li> RootBucket</li><li> HostedZone</li><li> AcmCertificate</li><li> <strong>params</strong>: (domain)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: (ResourceID | null)</li><ul><li> <strong>resourceID</strong>: STRING: ID or ARN (Amazon resource number) of the existing resource</li></ul><li> <strong>reject</strong>: (error) </li></ul><h2 id=generateTemplat194>generateTemplate(domain, stack, config, template, overwrite)</h2><ul><li><strong>description</strong>: Generates a cloudformation template for a given domain</li><li> <strong>params</strong>: (domain, stack, config, template, overwrite)</li><li> <strong>domain</strong>: STRING: REQUIRED: the root domain of your site i.e. yoursite.com</li><li> <strong>stack</strong>: OBJECT: REQUIRED: Contains the desired resources for the given stack with boolean values</li><pre class="pre code"><code>```
+  const stack = {
+  bucket: true,
+  www: true,
+  dns: true,
+  cdn: false,
+  https: false
+}
+```
+</ul></pre></code>  - <strong>config</strong>: OBJECT: REQUIRED: Stack configuration. Contains the desired providers for each resource as well as the index and error documents.<pre class="pre code"><code>```
+const config = {
+  index:"index.html",
+  error:"error.html",
+  last_deployment:"",
+  providers: {
+    domain: 'godaddy',
+    bucket: 'aws',
+    cdn: 'aws',
+    dns: 'aws',
+    https: 'aws'
+  }
+}
+```
+</pre></code>  - <strong>template</strong>: OBJECT: An existing JSON cloudformation template that you wicsh to modify<ul><li><strong>overwrite</strong>: BOOLEAN: Set as true if you wish to overwrite the existing template with the generated template. By default, only new resources are added to the existing template.</li><li> <strong>returns</strong>: promise(resolve, reject)</li><li> <strong>resolve</strong>: ({"template":{}, "existingResources":[]})</li><ul><li> <strong>template</strong>: OBJECT: the generated cloudformation template</li><li> <strong>existingResource</strong>: ARRAY: an array of resources that exist for the given domain that should be imported into the template</li></ul><li> <strong>reject</strong>: (error)</li>
+                        </section>
+                      </div>
+                      
+<footer class="bg-black sticky-bottom text-center text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="text-lg-left">Copyright &copy; Super Easy Forms 2019</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-lg-right">powered by Super Easy Docs</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+                    </div>
+                  </div>
+                  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="../js/docs.js"></script>
+
+                </body>
+              </html>        
+              
